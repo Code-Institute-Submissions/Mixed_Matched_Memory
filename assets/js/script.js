@@ -53,12 +53,16 @@ img: 'assets/images/kitten.png'
 },
 ]
 
-const grid = document.querySelector.('.grid')
+const grid = document.querySelector('.grid')
 
 //create your board
 function createBoard() {
     for (let i = 0, i < cardArray.length; i++){
-        var.card 
+        var card = document.createElement('img')
+        card.setAttribute('src', 'images/card-color.png')
+        card.setAttribute('data-id', i)
+       // card.addEventListener ('click', flipcard)
+       grid.appendChild(card)
     }
 }
 })
