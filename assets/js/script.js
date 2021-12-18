@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
 
     //card options
 
@@ -54,6 +54,8 @@ img: 'assets/images/kitten.png'
 ]
 
 const grid = document.querySelector('.grid')
+var cardsChosen = []
+var cardsChosenId = []
 
 //create your board
 function createBoard() {
@@ -65,4 +67,23 @@ function createBoard() {
        grid.appendChild(card)
     }
 }
+
+//check for matches
+function checkforMatch() {
+    var cards = document.querySelectorAll('img')
+    const OptionOneId = cardsChosenId[0]
+    const OptionTwoId = cardsChosenId[1]
+}
+
+//flip the cards
+function flipCard() {
+    var cardId = this.getAttribute('data-id')
+    cardsChosen.push(cardArray[cardId].name)
+    cardsChosenId.push(cardId)
+    this.setAttribute('src', cardArray[cardId].img)
+    if (cardsChosen.length === 2) {
+        setTimeout(checkforMatch, 500)
+    }
+}
+
 })
