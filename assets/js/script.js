@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const cardArray = [{
         name: 'yoda-dog',
-        img: '',
+        img: 'ass',
 },
 {
         name: 'yoda-dog',
@@ -50,13 +50,16 @@ document.addEventListener("DOMContentLoaded", () => {
         name: 'cat',
         img: 'assets/images/cat.png'
 },
-]
+];
 
 //Sort the cards random
 cardArray.sort(() => 0.5 - Math.random());
 
+//Constants
 const grid = document.querySelector('.grid');
+const scoreDisplay = document.querySelector("#score");
 const movesCount = document.querySelector("#moves");
+const reset = document.getElementById("reset");
 
 let cardsChosen = []
 let cardsChosenId = []
@@ -67,7 +70,7 @@ function createBoard() {
         var card = document.createElement("img")
         card.setAttribute('src', 'images/card-color.png')
         card.setAttribute('data-id', i)
-       // card.addEventListener ('click', flipcard)
+       card.addEventListener ('click', flipcard)
        grid.appendChild(card)
     }
 }
@@ -89,10 +92,28 @@ function flipCard() {
         setTimeout(checkforMatch, 500)
     }
 }
+//Reset the Game
+reset.addEventListener("click", resetGame);
+
+function resetGame() {
+    memoryGame.innerHTML = "";
+    document.getElementById("win-message").innerHTML = "";
+    cardArray.sort(() => 0.5 - Math.random());
+    createMemory(memoryGame, cardArray);
+    cardsCorrect = [];
+    scoreDisplay.innerHTML = 0;
+    cardsChosen = [];
+    cardsChosenId = [];
+    movesCount.innerHTML = 0;
+    moves = 0;
+}
 
 //Count each move
 function movesCounter() {
      movesCount.innerHTML++;
      moves++;
     }
+
+    createMemory();
+
 });
