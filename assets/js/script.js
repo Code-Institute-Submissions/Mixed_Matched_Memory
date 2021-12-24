@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const cardArray = [{
         name: 'yoda-dog',
-        img: 'assets/images/yoda-dog.png',
+        img: '',
 },
 {
         name: 'yoda-dog',
@@ -55,14 +55,16 @@ document.addEventListener("DOMContentLoaded", () => {
 //Sort the cards random
 cardArray.sort(() => 0.5 - Math.random());
 
-const grid = document.querySelector('.grid')
-var cardsChosen = []
-var cardsChosenId = []
+const grid = document.querySelector('.grid');
+const movesCount = document.querySelector("#moves");
+
+let cardsChosen = []
+let cardsChosenId = []
 
 //create  board
 function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
-        var card = document.createElement('img')
+        var card = document.createElement("img")
         card.setAttribute('src', 'images/card-color.png')
         card.setAttribute('data-id', i)
        // card.addEventListener ('click', flipcard)
@@ -72,7 +74,7 @@ function createBoard() {
 
 //check for matches
 function checkforMatch() {
-    var cards = document.querySelectorAll('img')
+    var cards = document.querySelectorAll("img")
     const OptionOneId = cardsChosenId[0]
     const OptionTwoId = cardsChosenId[1]
 }
@@ -88,4 +90,9 @@ function flipCard() {
     }
 }
 
-})
+//Count each move
+function movesCounter() {
+     movesCount.innerHTML++;
+     moves++;
+    }
+});
