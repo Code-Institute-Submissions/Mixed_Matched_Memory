@@ -2,56 +2,58 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //card options
 
-const cardArray = [
-{
- name: 'yoda-dog',
- img: 'assets/images/yoda-dog.png'
+    const cardArray = [{
+        name: 'yoda-dog',
+        img: 'assets/images/yoda-dog.png',
 },
 {
-    name: 'yoda-dog',
-    img: 'assets/images/yoda-dog.png'
+        name: 'yoda-dog',
+        img: 'assets/images/yoda-dog.png',
 },
 {
-    name: 'spider',
-    img: 'assets/images/spider.png'
+        name: 'spider',
+        img: 'assets/images/spider.png'
 },
 {
-    name: 'spider',
-    img: 'assets/images/spider.png'
+        name: 'spider',
+        img: 'assets/images/spider.png'
 },
 {
-    name: 'kitten',
-    img: 'assets/images/kitten.png'
+        name: 'kitten',
+        img: 'assets/images/kitten.png'
 },
 {
-name: 'kitten',
-img: 'assets/images/kitten.png'
+        name: 'kitten',
+        img: 'assets/images/kitten.png'
 },
 {
-    name: 'hamster',
-    img: 'assets/images/hamster.png'
+        name: 'hamster',
+        img: 'assets/images/hamster.png'
 },
 {
-    name: 'hamster',
-    img: 'assets/images/hamster.png'
+        name: 'hamster',
+        img: 'assets/images/hamster.png'
 },
 {
-    name: 'curlydog',
-    img: 'assets/images/curlydog.png'
+        name: 'curlydog',
+        img: 'assets/images/curlydog.png'
 },
 {
-    name: 'curlydog',
-    img: 'assets/images/curlydog.png'
+        name: 'curlydog',
+        img: 'assets/images/curlydog.png'
 },
 {
-    name: 'cat',
-    img: 'assets/images/cat.png'
+        name: 'cat',
+        img: 'assets/images/cat.png'
 },
 {
-    name: 'cat',
-    img: 'assets/images/cat.png'
+        name: 'cat',
+        img: 'assets/images/cat.png'
 },
 ]
+
+//Sort the cards random
+cardArray.sort(() => 0.5 - Math.random());
 
 const grid = document.querySelector('.grid')
 var cardsChosen = []
