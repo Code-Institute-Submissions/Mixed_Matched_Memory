@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const cardArray = [{
         name: 'yoda-dog',
-        img: 'ass',
+        img: 'assets/images/yoda-dog.png',
 },
 {
         name: 'yoda-dog',
@@ -61,39 +61,55 @@ const scoreDisplay = document.querySelector("#score");
 const movesCount = document.querySelector("#moves");
 const reset = document.getElementById("reset");
 
-let cardsChosen = []
-let cardsChosenId = []
-
+let cardsChosen = [];
+let cardsChosenId = [];
+createBoard();
 //create  board
 function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
-        var card = document.createElement("img")
-        card.setAttribute('src', 'images/card-color.png')
-        card.setAttribute('data-id', i)
-       card.addEventListener ('click', flipcard)
-       grid.appendChild(card)
+        var card = document.createElement("img");
+        card.setAttribute('src', 'assets/images/card-color.png');//cardArray[i].img);
+        card.setAttribute('data-id', i);
+        card.setAttribute('id', 'img'+i);
+        card.onclick = function() {flipCard(i); };
+       grid.appendChild(card);
     }
 }
 
 //check for matches
 function checkforMatch() {
-    var cards = document.querySelectorAll("img")
-    const OptionOneId = cardsChosenId[0]
-    const OptionTwoId = cardsChosenId[1]
+       
+    var cards = document.querySelectorAll("img");
+    var OptionOne = cardArray[document.getElementById('img'+cardsChosenId[0]).getAttribute('data-id')].img;
+    var OptionTwo = cardArray[document.getElementById('img'+cardsChosenId[1]).getAttribute('data-id')].img;
+
+    if(OptionOne === OptionTwo){
+        alert('Match');
+    }
+
+    else{
+            alert('Clearly Not a Match...you fool!');
+    }
+
+    document.getElementById('img'+cardsChosenId[0]).setAttribute('src', 'assets/images/card-color.png');
+    document.getElementById('img'+cardsChosenId[1]).setAttribute('src', 'assets/images/card-color.png');
+    cardsChosenId = [];
+    cardsChosen = [];
 }
 
 //flip the cards
-function flipCard() {
-    var cardId = this.getAttribute('data-id')
-    cardsChosen.push(cardArray[cardId].name)
-    cardsChosenId.push(cardId)
-    this.setAttribute('src', cardArray[cardId].img)
+function flipCard(cardId) {
+   // var cardId = this.getAttribute('data-id')
+    cardsChosen.push(cardArray[cardId].name);
+    cardsChosenId.push(cardId);
+    document.getElementById('img'+cardId).setAttribute('src', cardArray[cardId].img);
     if (cardsChosen.length === 2) {
         setTimeout(checkforMatch, 500)
+
     }
 }
 //Reset the Game
-reset.addEventListener("click", resetGame);
+//reset.addEventListener("click", resetGame);
 
 function resetGame() {
     memoryGame.innerHTML = "";
@@ -114,6 +130,6 @@ function movesCounter() {
      moves++;
     }
 
-    createMemory();
+   // createMemory();
 
 });
