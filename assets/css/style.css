@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+
 #body-background {
     background-color: #280216;
 }
 
 .text-header {
     color: #7072C5;
-    font-family: ;
+    font-family: 'Pushster', cursive;
     font-size: 25px;
     text-align: center;
     margin: auto;
