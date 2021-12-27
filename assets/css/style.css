@@ -1,3 +1,7 @@
+#body-background {
+    background-color: #280216;
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
