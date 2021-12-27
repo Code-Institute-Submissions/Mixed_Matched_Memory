@@ -68,7 +68,7 @@ createBoard();
 function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
         var card = document.createElement("img");
-        card.setAttribute('src', 'assets/images/card-color.png');//cardArray[i].img);
+        card.setAttribute('src', 'assets/images/card-color.png');
         card.setAttribute('data-id', i);
         card.setAttribute('id', 'img'+i);
         card.onclick = function() {flipCard(i); };
@@ -88,7 +88,7 @@ function checkforMatch() {
     }
 
     else{
-            alert('Not A Match! Take A Shot');
+            alert('Not A Match! Take A Shot!');
     }
 
     document.getElementById('img'+cardsChosenId[0]).setAttribute('src', 'assets/images/card-color.png');
@@ -99,7 +99,6 @@ function checkforMatch() {
 
 //flip the cards
 function flipCard(cardId) {
-   // var cardId = this.getAttribute('data-id')
     cardsChosen.push(cardArray[cardId].name);
     cardsChosenId.push(cardId);
     document.getElementById('img'+cardId).setAttribute('src', cardArray[cardId].img);
@@ -129,7 +128,5 @@ function movesCounter() {
      movesCount.innerHTML++;
      moves++;
     }
-
-   // createMemory();
 
 });
