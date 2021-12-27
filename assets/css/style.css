@@ -1,7 +1,330 @@
-.grid {
+@import url('https://fonts.googleapis.com/css2?family=Peralta&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*----------------Body bg-colour---*/
+#body-bg {
+    background-color: #37B5FF;
+}
+/*----------------Font & colour for headers---*/
+
+.text-header {
+    color: #FEE73B;
+    font-family: Peralta, Roboto, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+}
+
+@media only screen and (min-width: 600px) {
+    .text-header {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .text-header {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .text-header {
+        font-size: 60px;
+        padding-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .text-header {
+        font-size: 65px;
+    }
+}
+
+/*----------------Font & colour for normal text---*/
+
+.text-style {
+    color: #FEE73B;
+    font-family: Peralta, Roboto, sans-serif;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 600px) {
+    .text-style {
+        font-size: 20px;
+        margin: 4px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .text-style {
+        font-size: 25px;
+        margin: 6px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .text-style {
+        font-size: 35px;
+        margin: 8px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .text-style {
+        font-size: 40px;
+        margin: 10px;
+    }
+}
+
+/*----------------Background image lego-balloons---*/
+
+.balloon-bg {
+    background-image: url("../assets/images/background_images/lego_party_unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/*----------------Header, play & contact button - wraper to push a little down from the top---*/
+
+.wraper {
+    padding: 11px;
+}
+
+/*----------------Play & Contact Button---*/
+
+#play-button {
+    position: relative;
+    background-color: #FEE73B;
+    color: #FDA6F5;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+#contact-button {
+    position: relative;
+    background-color: #FEE73B;
+    color: #37B5FF;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+    #play-button, #contact-button {
+        font-size: 30px;
+        margin: 2px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #play-button, #contact-button {
+        font-size: 40px;
+        margin: 4px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #play-button, #contact-button {
+        font-size: 50px;
+        margin: 8px;
+    }
+}
+
+/*----------------Text before Memory Game---*/
+
+#play {
+    margin-top: 5px;
+}
+
+/*----------------Memory Game - Credit: Code with Ania Kubow, https://www.youtube.com/watch?v=tjyDOHzKN0w & Michelle3334 / freaky_memory on GitHub: https://github.com/Michelle3334---*/
+
+@media only screen and (min-width: 992px) {
+    .game-wrap {
+        padding-top: 30px;
+    }
+}
+
+.game-card {
+    border-radius: 4px;
+    margin: 3px;
+}
+
+#memory-game {
+    text-align: center;
+    border-radius: 4px;
+}
+
+@media only screen and (min-width: 600px) {
+    #memory-game {
+        margin: auto;
+        width: 375px;
+        height: 420px;
+    }
+}
+
+/*----------------Win message---*/
+
+#win-message {
+    color: #FDA6F5;
+    background-color: #FEE73B;
+}
+
+/*----------------Score, moves and reset---*/
+
+.score_moves_wrap {
+    text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+    .score_moves_wrap {
+        padding: 10px;
+    }
+}
+
+#reset {
+    background-color: #FEE73B;
+    color: #FDA6F5;
+    border-radius: 4px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#reset-container {
+    position: relative;
+    text-align: center;
+    display: block;
+}
+
+/*----------------Text Thank you for playing---*/
+
+.great-day {
+    text-align: center;
+    margin: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+    .thank-you {
+        padding-top: 30px;
+    }
+}
+
+/*----------------Image icecream-break---*/
+
+.img-icecream {
+    margin-bottom: 8px;
+}
+
+/*----------------Contact form---*/
+
+.align-left {
     display: flex;
-    flex-wrap: wrap;
-    height: 300px;
-    width: 400px;
-    background-color: black;
+}
+
+/*----------------Contact buttons---*/
+
+.contact-buttons {
+    text-align: center;
+}
+
+#submit-button {
+    background-color: #FEE73B;
+    color: #FDA6F5;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#clear-button {
+    background-color: #FEE73B;
+    color: #37B5FF;
+    border-radius: 4px;
+}
+
+#play-again {
+    background-color: #FDA6F5;
+    border-radius: 4px;
+}
+
+/*----------------Footer---*/
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #FEE73B;
+    position: absolute;
+    width: 100%;
+}
+
+.fa-github-square {
+    color: #37B5FF;
+    font-size: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+    .fa-github-square {
+        font-size: 40px;
+        margin: 4px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .fa-github-square {
+        font-size: 50px;
+        margin: 6px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .fa-github-square {
+        font-size: 60px;
+        margin: 8px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .fa-github-square {
+        font-size: 70px;
+    }
+}
+
+/*----------------404 Page Styling - Credit: Rebeccatraceyt / WhatTheBlank on GitHub: https://github.com/rebeccatraceyt/WhatTheBlank ---*/
+
+#error-page {
+    display: flex;
+    justify-content: center;
+}
+
+#error {
+    align-self: center;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 800;
+    padding-top: 10%;
+
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+#error-image {
+    max-width: 80%;
+    height: auto;
+}
+#error button {
+    background-color: #37B5FF;
+    border-radius: 4px;
+}
+#error button > a {
+    font-size: 1.5rem;
+    color: #FEE73B;
+    text-decoration: none;
+}
+#error button:hover  {
+    background-color: #FEE73B;
+}
+#error button > a:hover {
+    color: #37B5FF;
 }

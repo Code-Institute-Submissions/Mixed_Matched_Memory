@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 cardArray.sort(() => 0.5 - Math.random());
 
 //Constants
-const grid = document.querySelector('.grid');
+const memoryGame = document.querySelector("#memory-game");
 const reset = document.getElementById("reset");
 
 let cardsChosen = [];
@@ -71,6 +71,7 @@ function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
         var card = document.createElement("img");
         card.setAttribute('src', 'assets/images/card-color.jpg');
+        card.setAttribute("class", "game-card");
         card.setAttribute('data-id', i);
         card.setAttribute('id', 'img'+i);
         card.onclick = function() {flipCard(i); };
@@ -93,8 +94,8 @@ function checkforMatch() {
             alert('Not A Match! Take A Shot!');
     }
 
-    document.getElementById('img'+cardsChosenId[0]).setAttribute('src', 'assets/images/card-color.png');
-    document.getElementById('img'+cardsChosenId[1]).setAttribute('src', 'assets/images/card-color.png');
+    document.getElementById('img'+cardsChosenId[0]).setAttribute('src', 'assets/images/card-color.jpg');
+    document.getElementById('img'+cardsChosenId[1]).setAttribute('src', 'assets/images/card-color.jpg');
     cardsChosenId = [];
     cardsChosen = [];
 }
