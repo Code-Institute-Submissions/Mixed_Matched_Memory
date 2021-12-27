@@ -84,11 +84,11 @@ function checkforMatch() {
     var OptionTwo = cardArray[document.getElementById('img'+cardsChosenId[1]).getAttribute('data-id')].img;
 
     if(OptionOne === OptionTwo){
-        alert('Match');
+        alert('A Match! Assign someone a Shot!');
     }
 
     else{
-            alert('Clearly Not a Match...you fool!');
+            alert('Not A Match! Take A Shot');
     }
 
     document.getElementById('img'+cardsChosenId[0]).setAttribute('src', 'assets/images/card-color.png');
