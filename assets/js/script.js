@@ -1,54 +1,57 @@
+//Credit for helping me learn how to make the memory-game: Code with Ania Kubow, https://www.youtube.com/watch?v=tjyDOHzKN0w, Michelle3334 / freaky_memory on GitHub: https://github.com/Michelle3334
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
     //card options
 
     const cardArray = [{
-        name: 'yoda-dog',
-        img: 'assets/images/yoda-dog.png',
+        name: 'Bacardi',
+        img: 'assets/images/Bacardi.jpg',
 },
 {
-        name: 'yoda-dog',
-        img: 'assets/images/yoda-dog.png',
+        name: 'Bacardi',
+        img: 'assets/images/Bacardi.jpg',
 },
 {
-        name: 'spider',
-        img: 'assets/images/spider.png'
+        name: 'Bombay',
+        img: 'assets/images/Bombay.jpg'
 },
 {
-        name: 'spider',
-        img: 'assets/images/spider.png'
+        name: 'Bombay',
+        img: 'assets/images/Bombay.jpg'
 },
 {
-        name: 'kitten',
-        img: 'assets/images/kitten.png'
+        name: 'cocktail',
+        img: 'assets/images/cocktail.jpg'
 },
 {
-        name: 'kitten',
-        img: 'assets/images/kitten.png'
+        name: 'cocktail',
+        img: 'assets/images/cocktail.jpg'
 },
 {
-        name: 'hamster',
-        img: 'assets/images/hamster.png'
+        name: 'Corona',
+        img: 'assets/images/Corona.jpg'
 },
 {
-        name: 'hamster',
-        img: 'assets/images/hamster.png'
+        name: 'Corona',
+        img: 'assets/images/Corona.jpg'
 },
 {
-        name: 'curlydog',
-        img: 'assets/images/curlydog.png'
+        name: 'Jack',
+        img: 'assets/images/Jack.jpg'
 },
 {
-        name: 'curlydog',
-        img: 'assets/images/curlydog.png'
+        name: 'Jack',
+        img: 'assets/images/Jack.jpg'
 },
 {
-        name: 'cat',
-        img: 'assets/images/cat.png'
+        name: 'Wine',
+        img: 'assets/images/Wine.jpg'
 },
 {
-        name: 'cat',
-        img: 'assets/images/cat.png'
+        name: 'Wine',
+        img: 'assets/images/Wine.jpg'
 },
 ];
 
@@ -57,13 +60,12 @@ cardArray.sort(() => 0.5 - Math.random());
 
 //Constants
 const grid = document.querySelector('.grid');
-const scoreDisplay = document.querySelector("#score");
-const movesCount = document.querySelector("#moves");
 const reset = document.getElementById("reset");
 
 let cardsChosen = [];
 let cardsChosenId = [];
 createBoard();
+
 //create  board
 function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
@@ -116,17 +118,9 @@ function resetGame() {
     cardArray.sort(() => 0.5 - Math.random());
     createMemory(memoryGame, cardArray);
     cardsCorrect = [];
-    scoreDisplay.innerHTML = 0;
     cardsChosen = [];
     cardsChosenId = [];
-    movesCount.innerHTML = 0;
-    moves = 0;
 }
 
-//Count each move
-function movesCounter() {
-     movesCount.innerHTML++;
-     moves++;
-    }
 
 });
