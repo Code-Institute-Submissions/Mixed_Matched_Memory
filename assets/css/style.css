@@ -2,6 +2,14 @@
     background-color: #280216;
 }
 
+.text-header {
+    color: #7072C5;
+    font-family: ;
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
