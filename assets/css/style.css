@@ -12,7 +12,7 @@
     margin: auto;
 }
 
-#text-p {
+#sub-text {
     color: #7072C5;
     font-family: 'Pushster', cursive;
     font-size: 40px;
@@ -38,4 +38,12 @@
     border-radius: 4px;
     margin: auto;
     padding-top: 30px;
+}
+
+#rules-button {
+    position: relative;
+    background-color: #e66bd5;
+    color: #280216;
+    padding: 4px;
+    border-radius: 4px;
 }
