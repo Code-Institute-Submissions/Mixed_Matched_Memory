@@ -61,6 +61,8 @@ cardArray.sort(() => 0.5 - Math.random());
 //Constants
 const memoryGame = document.querySelector("#memory-game");
 const reset = document.getElementById("reset");
+const card = document.getElementById("card");
+
 
 let cardsChosen = [];
 let cardsChosenId = [];
@@ -74,7 +76,6 @@ function createBoard() {
         card.setAttribute("class", "game-card");
         card.setAttribute('data-id', i);
         card.setAttribute('id', 'img'+i);
-        card.onclick = function() {flipCard(i); };
        grid.appendChild(card);
     }
 }
@@ -100,8 +101,11 @@ function checkforMatch() {
 }
 
 //flip the cards
+card.addEventListener("click",flipCard);
+
 function flipCard(cardId) {
-        var cardId = this.getAttribute('data-id')
+        card.classList.toggle("flipCard");
+        //var cardId = this.getAttribute('data-id')
         cardsChosen.push(cardArray[cardId].name);
         cardsChosenId.push(cardId);
         document.getElementById('img'+cardId).setAttribute('src', cardArray[cardId].img);
