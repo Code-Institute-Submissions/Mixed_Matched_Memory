@@ -70,8 +70,7 @@ createBoard();
 function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
         var card = document.createElement("img");
-        card.setAttribute('src', 'assets/images/card-color.jpg');
-        card.setAttribute("class", "game-card");
+        card.setAttribute('src', 'assets/images/card-color.jpg')
         card.setAttribute('data-id', i);
         card.setAttribute('id', 'img'+i);
         card.onclick = function() {flipCard(i); };
@@ -80,32 +79,31 @@ function createBoard() {
 }
 
 //checkForMatch
-var cards = document.querySelectorAll("img"); {
+function checkforMatch() {
+    var cards = document.querySelectorAll("img");
     var OptionOne = cardArray[document.getElementById('img'+cardsChosenId[0]).getAttribute('data-id')].img;
     var OptionTwo = cardArray[document.getElementById('img'+cardsChosenId[1]).getAttribute('data-id')].img;
 
     if(OptionOne === OptionTwo){
-        document.getElementById("win-message").innerHTML = 'You Win! Assign A Shot!';
+        alert('Match');
     }
 
     else{
-        document.getElementById("win-message").innerHTML = 'You Lose! Take A Shot!';
+            alert('Clearly Not a Match...you fool!');
     }
 
-    document.getElementById('img'+cardsChosenId[0]).setAttribute('src', 'assets/images/card-color.png');
-    document.getElementById('img'+cardsChosenId[1]).setAttribute('src', 'assets/images/card-color.png');
+    document.getElementById('img'+cardsChosenId[0]).setAttribute('src', 'assets/images/card-color.jpg');
+    document.getElementById('img'+cardsChosenId[1]).setAttribute('src', 'assets/images/card-color.jpg');
     cardsChosenId = [];
     cardsChosen = [];
 }
 
 //flip the cards
 function flipCard(cardId) {
-    cardsChosen.push(cardArray[cardId].name);
-    cardsChosenId.push(cardId);
-    document.getElementById('img'+cardId).setAttribute('src', cardArray[cardId].img);
-    if (cardsChosen.length === 2) {
-        setTimeout(checkforMatch, 500);
-    }
+        var cardId = this.getAttribute('data-id')
+        cardsChosen.push(cardArray[cardId].name);
+        cardsChosenId.push(cardId);
+        document.getElementById('img'+cardId).setAttribute('src', cardArray[cardId].img);
 }
 
 //Reset the Game
@@ -121,4 +119,4 @@ function resetGame() {
 }
 
 
-});
+})

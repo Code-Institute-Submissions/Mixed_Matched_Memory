@@ -81,8 +81,8 @@
 .grid {
     display: flex;
     flex-wrap: wrap;
-    height: 400px;
-    width: 300px;
+    height: 300px;
+    width: 500px;
     margin: auto;
 }
 
@@ -100,7 +100,7 @@
 
 /*Media Queries for Memory Game*/
 @media only screen and (min-width: 600px) {
-    #memory-game {
+    .grid {
         margin: auto;
         width: 400px;
         height: 500px;
