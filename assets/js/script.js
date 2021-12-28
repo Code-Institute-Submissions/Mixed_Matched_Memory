@@ -87,7 +87,7 @@ function checkforMatch() {
     var OptionTwo = cardArray[document.getElementById('img'+cardsChosenId[1]).getAttribute('data-id')].img;
 
     if(OptionOne === OptionTwo){
-        alert('A Match! Assign someone a Shot!');
+        document.getElementById("win-message").innerHTML = 'A Match! Assign someone a Shot!';
     }
 
     else{
@@ -98,6 +98,7 @@ function checkforMatch() {
     document.getElementById('img'+cardsChosenId[1]).setAttribute('src', 'assets/images/card-color.jpg');
     cardsChosenId = [];
     cardsChosen = [];
+
 }
 
 //flip the cards
