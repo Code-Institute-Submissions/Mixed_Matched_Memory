@@ -41,19 +41,14 @@ As a User, I want:
 
 ### Development planes ###  
 
+To make sure that I was achieving these goals, I worked with my family over Christmas to see how we felt about a game such as this.
 
 ### Strategy ###  
 
-  
-  * ### Demographic: ###  
-    
-    
-    * ### Lifestyles: ###  
-     
-
+This game was made for adults who enjoy having a bit of fun whille they drink. 
 
 ### User Goals ###  
-
+*  
 
 ### Site Owner Goals ###  
 
