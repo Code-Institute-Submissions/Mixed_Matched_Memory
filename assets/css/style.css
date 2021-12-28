@@ -115,9 +115,16 @@
     border-radius: 4px;
 }
 
-/*Win Message*/
+/* Messages */
 
 #win-message {
     color: #280216;
     background-color: #aac7d6;
+    font-family: 'Pushster', cursive;
+}
+
+#lose-message {
+    color: #280216;
+    background-color: #aac7d6;
+    font-family: 'Pushster', cursive;
 }
