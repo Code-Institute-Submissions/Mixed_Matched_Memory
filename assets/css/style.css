@@ -39,12 +39,42 @@
     }
 }
 
+/*Any Other Text Besides Header*/
 #sub-text {
     color: #7072C5;
     font-family: 'Pushster', cursive;
     font-size: 40px;
     text-align: center;
     margin: auto;
+}
+
+/*Media Queries for Any Other Text Besides Header*/
+@media only screen and (min-width: 600px) {
+    .text-header {
+        font-size: 50px;
+        margin: 4px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .text-header {
+        font-size: 60px;
+        margin: 6px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .text-header {
+        font-size: 70px;
+        margin: 8px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .text-header {
+        font-size: 75px;
+        margin: 10px;
+    }
 }
 
 .grid {
