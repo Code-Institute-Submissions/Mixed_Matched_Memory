@@ -75,7 +75,7 @@ function createBoard() {
         card.setAttribute('data-id', i);
         card.setAttribute('id', 'img'+i);
         card.onclick = function() {flipCard(i); };
-        reset.onclick = function () {reset(); };
+        reset.onclick = function () {resetGame(); };
        grid.appendChild(card);
     }
 }
