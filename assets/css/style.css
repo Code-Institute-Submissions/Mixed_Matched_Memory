@@ -91,9 +91,6 @@
     margin: 3px;
 }
 
-.flipCard {
-    transform: rotateY(180deg);
-}
 
 #memory-game {
     text-align: center;
@@ -111,13 +108,19 @@
 }
 
 /*Reset Button*/ 
-#reset-button {
-    background-color: #e66bd5;
+#reset {
+    background-color: #7072C5;
     color: #280216;
-    padding: 4px;
     border-radius: 4px;
     text-align: center;
-    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#reset-container {
+    position: relative;
+    text-align: center;
+    display: block;
 }
 
 /* Messages */

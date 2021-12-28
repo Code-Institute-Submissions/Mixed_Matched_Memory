@@ -100,7 +100,6 @@ function checkforMatch() {
 
 //flip the cards
 function flipCard(cardId) {
-        var cardId = this.getAttribute('data-id')
         cardsChosen.push(cardArray[cardId].name);
         cardsChosenId.push(cardId);
         document.getElementById('img'+cardId).setAttribute('src', cardArray[cardId].img);
