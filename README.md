@@ -1,108 +1,197 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Drinking memory-game #
 
-Welcome EmmaNoelles,
+[View the live site here]()
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![mockup]()
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
+## Table of contents ##
+* [Introduction & project goals](#introduction--project-goals)
+* [UX](#ux)      
+    * [User stories](#user-stories)      
+    * [Design](#design)
+    * [Changes from wireframes to published application](#Changes-from-wireframes-to-published-application)
+    * [Features](#features)  
+* [Technologies](#technologies)    
+* [Testing](#testing)   
+* [Deployment](#deployment)    
+* [Credit](#credit)  
+* [Acknowledgements](#acknowledgements)
 ---
 
-Happy coding!
+### Introduction & Project Goals ###
+
+
+## UX ##
+
+### User Stories ###  
+
+
+### Development planes ###  
+
+
+### Strategy ###  
+
+  
+  * ### Demographic: ###  
+    
+    
+    * ### Lifestyles: ###  
+     
+
+
+### User Goals ###  
+
+
+### Site Owner Goals ###  
+
+
+### Scope ###
+
+#### User Requirements And Expectations ####  
+
+  
+
+### Skeleton ###  
+
+
+#### Design for mobile device: ####  
+
+  
+#### Design for tablet device: ####
+
+
+#### Design for desktop device: ####
+
+
+### Design ### 
+The Design of this game was originally going to be a fun kids game based on funny looking animals, however during the making of this game, my grandfather passed away and he did enjoy having a drink and drinking games. 
+
+This game is one page, so theres no scrolling to find the game. Its uncomplicated as nobody wants to jump through hoops to paly a simple game.
+
+* Fonts  
+  
+  [Google Fonts](https://fonts.google.com/specimen/Pushster): font-family: 'Pushster', cursive;.  
+  I chose this font as I thought it sticks out yet remains elegant which looks nice with the deep purple.
+
+* Colours  
+
+I picked the colors by picking colors using the dropper feature on the image that i chose that covers the cards to pull everything together.
+  
+  * Background: #280216
+  * Text: #7072c5     
+
+  Color Scheme from [Coolors](https://coolors.co/)  
+  ![image](assets/wireframes/MixedMatchedMemory.png)   
+
+### Features ###  
+
+This Memory Game should be working across all screensizes so it can be used on a phone, tablet or computer. 
+
+Features that have been implemented:  
+* Memory-game  
+  Let`s the user play a memory game with twelve cards, and by flipping them try to find all matching pairs.  
+
+* Reset button  
+  Let`s the user reset the game to play again.  
+
+* Easy to navigate on all screensizes  
+  By making the layout look the same by adding responsivnes, it is easy for the user to navigate on all screensizes.  
+
+* GitHub link  
+  GitHub link takes the user to the developers GitHub page.  
+
+Features that I want to implement in the future:  
+* Increased difficulty
+* Fully Styled Alert button
+* Sound when boxes in Memory Game are pushed  
+
+### Technologies ###  
+Languages  
+* [HTML](https://no.wikipedia.org/wiki/HTML)  
+* [CSS](https://en.wikipedia.org/wiki/CSS)
+* [JS](https://no.wikipedia.org/wiki/JavaScript)  
+
+Tools / Libraries  
+* [Git](https://git-scm.com/)  
+Git was used for version control by utilizing the GitPod terminal to commit to Git and push to GitHub.     
+* [Google Fonts](https://fonts.google.com/)  
+Google fonts was used to import the fonts Peralta, Roboto and Sans-serif into the style.css file.  
+* [Unsplash](https://unsplash.com/)  
+Unsplash was used for all the images on the web application.
+* [Coolors](https://coolors.co/)  
+Coolors was used to make the colorpalett.  
+* [Be Funky](https://www.befunky.com/)  
+Be Funky was used to resize the images in the Memory Game to avoid stretch.
+
+### Testing ###  
+ 
+### Deployment ###  
+  Deploying on GitHub pages  
+  
+  To deploy on GitHub pages from it`s GitHub respository, the following steps were taken:  
+    
+  1. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").  
+  2. Locate the [GitHub Respository](https://github.com/Carhul/ms2-kids-memory-game "Link to GitHub repository").  
+  3. At the top of the repository, select Settings from the menu items.  
+  4. Scroll down the Settings page to the "GitHub Pages" section and push the blue "Check it out here!" text.  
+  5. Under "Source" click the drop-down menu labelled "None" and select "Master".  
+  6. Select "save", and the page will automatically refresh meaning that the website is now deployed.  
+  7. Copy the deployed link to your live website!  
+
+  ### Forking the Repository ###  
+
+  By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:  
+    
+  1. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").  
+  2. Locate the [GitHub Respository](https://github.com/Carhul/ms2-kids-memory-game "Link to GitHub repository").  
+  3. At the top of the repository, on the right side of the page, select "Fork".  
+  4. You should now have a copy of the original repository in your GitHub account.  
+
+  ### Creating a Clone ###  
+
+  How to run this project locally:  
+
+   1. Install the [GitPod Browser](https://www.gitpod.io/docs/browser-extension/ "Link to Gitpod Browser extension download") Extension for Chrome.  
+   2. After installation, restart the browser.  
+   3. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").  
+   4. Locate the [GitHub Respository](https://github.com/Carhul/ms2-kids-memory-game "Link to GitHub repository").  
+   5. Click the green "GitPod" button in the top right corner of the repository.
+  This will trigger a new gitPod workspace to be created from the code in github where you can work locally.  
+
+  How to run this project within a local IDE, such as VSCode:  
+
+  1. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").  
+  2. Locate the [GitHub Respository](https://github.com/Carhul/ms2-kids-memory-game "Link to GitHub repository").  
+  3. Under the repository name, click "Clone or download".  
+  4. In the Clone with HTTPs section, copy the clone URL for the repository.  
+  5. In your local IDE open the terminal.  
+  6. Change the current working directory to the location where you want the cloned directory to be made.  
+  7. Type 'git clone', and then paste the URL you copied in Step 3.  
+
+    git clone https://github.com/USERNAME/REPOSITORY  
+  
+  8. Press Enter. Your local clone will be created.  
+
+  Further reading and troubleshooting on cloning a repository from GitHub [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository "Link to GitHub troubleshooting").
+
+
+### Credit ###  
+
+Content in the game was made up by my friends, family and me as a small tribute to my grandfather who passed while I was making the game.
+  
+#### Images ####  
+
+Background images:  
+
+* All images are taken from Unsplash.com, and resized using Befunky.com.
+
+Memory Game:  
+
+* [Ania Kubow](https://www.youtube.com/watch?v=tjyDOHzKN0w) on youtube.  
+* [Michelle3334](https://github.com/Michelle3334) / freaky_memory on GitHub.
+    
+### Acknowledgements ###
+
+* My cousin and his wife, for helping me fix some of my code.
+* My friends, for providing inspiration for this project.
+* My family, for their support through this.
