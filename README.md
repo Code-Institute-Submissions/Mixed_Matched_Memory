@@ -9,7 +9,6 @@
 * [UX](#ux)      
     * [User stories](#user-stories)      
     * [Design](#design)
-    * [Changes from wireframes to published application](#Changes-from-wireframes-to-published-application)
     * [Features](#features)  
 * [Technologies](#technologies)    
 * [Testing](#testing)   
@@ -19,7 +18,11 @@
 ---
 
 ### Introduction & Project Goals ###
+ This project is a simple drinking game, for those who love a simple drinking game and do not carry a pack of cards on them for anytime they go drinking. This website will be easy for people to access so they can play a simple yet fun drinking.
 
+ This project is part of my Full Stack Web Development Program at The Code Institute. It is the second one I have created and is the one that I have most enjoyed making so far.
+
+ The main requirements for this project were to create a web program that includes HTML, CSS and Javascript.
 
 ## UX ##
 
