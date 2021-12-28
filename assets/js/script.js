@@ -80,32 +80,24 @@ function createBoard() {
 }
 
 //checkForMatch
-function checkForMatch() {
-        const cards = document.querySelectorAll("img");
-        const optionOneId = cardsChosenId[0];
-        const optionTwoId = cardsChosenId[1];
+var cards = document.querySelectorAll("img");
+    var OptionOne = cardArray[document.getElementById('img'+cardsChosenId[0]).getAttribute('data-id')].img;
+    var OptionTwo = cardArray[document.getElementById('img'+cardsChosenId[1]).getAttribute('data-id')].img;
 
-        if (cardsChosen[0] === cardsChosen[1] && cardsChosenId[0] !== cardsChosenId[1]) {
-            cards[optionOneId].removeEventListener("click", flipCard);
-            cards[optionTwoId].removeEventListener("click", flipCard);
-            cardsCorrect.push(cardsChosen);
-            movesCounter();
-        } else {
-            cards[optionOneId].setAttribute("src", "assets/images/card-color.jpg");
-            cards[optionTwoId].setAttribute("src", "assets/images/card-color.jpg");
-            movesCounter();
-        }
+    if(OptionOne === OptionTwo){
+        document.getElementById("win-message").innerHTML = 'You Win! Assign A Shot!';
+    }
 
-        cardsChosen = [];
-        cardsChosenId = [];
+    else{
+        document.getElementById("win-message").innerHTML = 'You Lose! Take A Shot!';
+    }
 
-        //Alert message a match is found
-        if (cardsChosen[0] === cardsChosen[1] && cardsChosenId[0] !== cardsChosenId[1]) {
-                document.getElementById("win-message").innerHTML = "Assign a shot!";
-            }
-        } else {
-                document.getElementById("lose-message").innerHTML = "Take a shot!";
-        } 
+    document.getElementById('img'+cardsChosenId[0]).setAttribute('src', 'assets/images/card-color.png');
+    document.getElementById('img'+cardsChosenId[1]).setAttribute('src', 'assets/images/card-color.png');
+    cardsChosenId = [];
+    cardsChosen = [];
+    }
+}
 
 //flip the cards
 function flipCard(cardId) {
