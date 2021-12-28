@@ -86,11 +86,11 @@ function checkforMatch() {
     var OptionTwo = cardArray[document.getElementById('img'+cardsChosenId[1]).getAttribute('data-id')].img;
 
     if(OptionOne === OptionTwo){
-        alert('Match');
+        document.getElementById("win-message").innerHTML = 'You Win! Assign A Someone To Take A Drink!';
     }
 
     else{
-            alert('Clearly Not a Match...you fool!');
+        document.getElementById("lose-message").innerHTML ='You Lose! Take A Drink!';
     }
 
     document.getElementById('img'+cardsChosenId[0]).setAttribute('src', 'assets/images/card-color.jpg');
