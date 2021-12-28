@@ -96,6 +96,17 @@ function checkForMatch() {
             movesCounter();
         }
 
+        cardsChosen = [];
+        cardsChosenId = [];
+
+        //Alert message a match is found
+        if (cardsChosen[0] === cardsChosen[1] && cardsChosenId[0] !== cardsChosenId[1]) {
+                document.getElementById("win-message").innerHTML = "Assign a shot!";
+            }
+        } else {
+                document.getElementById("lose-message").innerHTML = "Take a shot!";
+        } 
+
 //flip the cards
 function flipCard(cardId) {
     cardsChosen.push(cardArray[cardId].name);
@@ -120,4 +131,4 @@ function resetGame() {
 }
 
 
-}
+});
