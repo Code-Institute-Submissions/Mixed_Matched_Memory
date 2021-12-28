@@ -27,7 +27,17 @@
 ## UX ##
 
 ### User Stories ###  
-
+As a User, I want:
+* Attractive colours that are easy to see.
+* Easily legible writing.
+* Simple rules.
+* Easy way to reset the game.
+* Distinct pictures.
+* Time to read the winning message.
+* Ability to play without a timer to allow a large group to play.
+* Have fun while playing.
+* Easily clickable cards.
+* To not have to scroll to find the game.
 
 ### Development planes ###  
 
