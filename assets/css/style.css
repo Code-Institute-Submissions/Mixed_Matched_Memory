@@ -84,7 +84,6 @@
     width: 400px;
     height: 500px;
     margin: auto;
-    
 }
 
 .game-card {
@@ -104,13 +103,6 @@
     #memory-game {
         margin: auto;
         width: 400px;
-        height: 500px;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .game-wrap {
-        padding-top: 30px;
     }
 }
 
