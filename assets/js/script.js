@@ -74,8 +74,8 @@ function createBoard() {
         card.setAttribute("class", "game-card");
         card.setAttribute('data-id', i);
         card.setAttribute('id', 'img'+i);
-        card.addEventListener("click", flipCard);
-        grid.appendChild(card);
+        card.onclick = function() {flipCard(i); };
+       grid.appendChild(card);
     }
 }
 
@@ -115,13 +115,14 @@ if (cardsChosen.length === 2) {
 reset.addEventListener("click", resetGame);
 
 function resetGame() {
-    memoryGame.innerHTML = "";
-    cardArray.sort(() => 0.5 - Math.random());
-    createMemory(memoryGame, cardArray);
-    cardsCorrect = [];
-    cardsChosen = [];
-    cardsChosenId = [];
-}
+        memoryGame.innerHTML = "";
+        document.getElementById("win-message").innerHTML = "";
+        cardArray.sort(() => 0.5 - Math.random());
+        createMemory(memoryGame, cardArray);
+        cardsCorrect = [];
+        cardsChosen = [];
+        cardsChosenId = [];
+    }
 
 
 })

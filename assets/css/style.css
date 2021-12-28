@@ -40,10 +40,10 @@
 }
 
 /*Any Other Text Besides Header*/
-#sub-text {
+.sub-text {
     color: #7072C5;
     font-family: 'Pushster', cursive;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     margin: auto;
 }
