@@ -74,6 +74,8 @@ function createBoard() {
         card.setAttribute("class", "game-card");
         card.setAttribute('data-id', i);
         card.setAttribute('id', 'img'+i);
+        card.onclick = function() {flipCard(i); };
+        reset.onclick = function () {reset(); };
        grid.appendChild(card);
     }
 }
@@ -85,11 +87,11 @@ function checkforMatch() {
     var OptionTwo = cardArray[document.getElementById('img'+cardsChosenId[1]).getAttribute('data-id')].img;
 
     if(OptionOne === OptionTwo){
-        document.getElementById("win-message").innerHTML = 'You Win! Assign A Someone To Take A Drink!';
+        document.getElementById("win-message").innerHTML = 'You Win! Assign Someone To Take A Drink!';
     }
 
     else{
-        document.getElementById("lose-message").innerHTML ='You Lose! Take A Drink!';
+        document.getElementById("win-message").innerHTML ='You Lose! Take A Drink!';
     }
 
     document.getElementById('img'+cardsChosenId[0]).setAttribute('src', 'assets/images/card-color.jpg');
@@ -110,14 +112,11 @@ if (cardsChosen.length === 2) {
 }
 
 //Reset the Game
-reset.addEventListener("click", resetGame);
-
 function resetGame() {
         memoryGame.innerHTML = "";
         document.getElementById("win-message").innerHTML = "";
         cardArray.sort(() => 0.5 - Math.random());
         createMemory(memoryGame, cardArray);
-        cardsCorrect = [];
         cardsChosen = [];
         cardsChosenId = [];
     }
