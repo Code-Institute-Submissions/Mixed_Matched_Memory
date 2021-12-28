@@ -79,27 +79,22 @@ function createBoard() {
     }
 }
 
-//check for matches
-function checkforMatch() {
-       
-    var cards = document.querySelectorAll("img");
-    var OptionOne = cardArray[document.getElementById('img'+cardsChosenId[0]).getAttribute('data-id')].img;
-    var OptionTwo = cardArray[document.getElementById('img'+cardsChosenId[1]).getAttribute('data-id')].img;
+//checkForMatch
+function checkForMatch() {
+        const cards = document.querySelectorAll("img");
+        const optionOneId = cardsChosenId[0];
+        const optionTwoId = cardsChosenId[1];
 
-    if(OptionOne === OptionTwo){
-        document.getElementById("win-message").innerHTML = 'A Match! Assign someone a Shot!';
-    }
-
-    else{
-            alert('Not A Match! Take A Shot!');
-    }
-
-    document.getElementById('img'+cardsChosenId[0]).setAttribute('src', 'assets/images/card-color.jpg');
-    document.getElementById('img'+cardsChosenId[1]).setAttribute('src', 'assets/images/card-color.jpg');
-    cardsChosenId = [];
-    cardsChosen = [];
-
-}
+        if (cardsChosen[0] === cardsChosen[1] && cardsChosenId[0] !== cardsChosenId[1]) {
+            cards[optionOneId].removeEventListener("click", flipCard);
+            cards[optionTwoId].removeEventListener("click", flipCard);
+            cardsCorrect.push(cardsChosen);
+            movesCounter();
+        } else {
+            cards[optionOneId].setAttribute("src", "assets/images/card-color.jpg");
+            cards[optionTwoId].setAttribute("src", "assets/images/card-color.jpg");
+            movesCounter();
+        }
 
 //flip the cards
 function flipCard(cardId) {
@@ -125,4 +120,4 @@ function resetGame() {
 }
 
 
-});
+}
