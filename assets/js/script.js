@@ -74,8 +74,8 @@ function createBoard() {
         card.setAttribute("class", "game-card");
         card.setAttribute('data-id', i);
         card.setAttribute('id', 'img'+i);
-        card.onclick = function() {flipCard(i); };
-       grid.appendChild(card);
+        card.addEventListener("click", flipCard);
+        grid.appendChild(card);
     }
 }
 
@@ -105,6 +105,10 @@ function flipCard(cardId) {
         cardsChosen.push(cardArray[cardId].name);
         cardsChosenId.push(cardId);
         document.getElementById('img'+cardId).setAttribute('src', cardArray[cardId].img);
+if (cardsChosen.length === 2) {
+        setTimeout(checkforMatch, 500)
+
+    }
 }
 
 //Reset the Game
