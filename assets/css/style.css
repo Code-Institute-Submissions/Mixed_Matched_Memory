@@ -47,3 +47,10 @@
     padding: 4px;
     border-radius: 4px;
 }
+
+/*Win Message*/
+
+#win-message {
+    color: #280216;
+    background-color: #aac7d6;
+}

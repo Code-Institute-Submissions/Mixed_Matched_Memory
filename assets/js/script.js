@@ -111,7 +111,7 @@ function flipCard(cardId) {
     }
 }
 //Reset the Game
-//reset.addEventListener("click", resetGame);
+reset.addEventListener("click", resetGame);
 
 function resetGame() {
     memoryGame.innerHTML = "";
