@@ -80,7 +80,7 @@ function createBoard() {
 }
 
 //checkForMatch
-var cards = document.querySelectorAll("img");
+var cards = document.querySelectorAll("img"); {
     var OptionOne = cardArray[document.getElementById('img'+cardsChosenId[0]).getAttribute('data-id')].img;
     var OptionTwo = cardArray[document.getElementById('img'+cardsChosenId[1]).getAttribute('data-id')].img;
 
@@ -96,7 +96,6 @@ var cards = document.querySelectorAll("img");
     document.getElementById('img'+cardsChosenId[1]).setAttribute('src', 'assets/images/card-color.png');
     cardsChosenId = [];
     cardsChosen = [];
-    }
 }
 
 //flip the cards
@@ -105,10 +104,10 @@ function flipCard(cardId) {
     cardsChosenId.push(cardId);
     document.getElementById('img'+cardId).setAttribute('src', cardArray[cardId].img);
     if (cardsChosen.length === 2) {
-        setTimeout(checkforMatch, 500)
-
+        setTimeout(checkforMatch, 500);
     }
 }
+
 //Reset the Game
 reset.addEventListener("click", resetGame);
 
