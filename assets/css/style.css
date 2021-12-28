@@ -78,6 +78,14 @@
 }
 
 /*Grid design*/
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    
+}
 
 .game-card {
     border-radius: 4px;
@@ -95,7 +103,7 @@
 @media only screen and (min-width: 600px) {
     #memory-game {
         margin: auto;
-        width: 00px;
+        width: 400px;
         height: 500px;
     }
 }

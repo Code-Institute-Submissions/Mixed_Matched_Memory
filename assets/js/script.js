@@ -71,6 +71,7 @@ function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
         var card = document.createElement("img");
         card.setAttribute('src', 'assets/images/card-color.jpg');
+        card.setAttribute("class", "game-card");
         card.setAttribute('data-id', i);
         card.setAttribute('id', 'img'+i);
         card.onclick = function() {flipCard(i); };
