@@ -48,28 +48,26 @@ To make sure that I was achieving these goals, I worked with my family over Chri
 This game was made for adults who enjoy having a bit of fun whille they drink. 
 
 ### User Goals ###  
-*  
+*  The user wants to have fun.
+*  The user wants to have relax.
+*  The user wants to have drinks quickly.
 
 ### Site Owner Goals ###  
-
-
-### Scope ###
-
-#### User Requirements And Expectations ####  
-
-  
+* The site owner wants the user to have fun.
+* The site owner wants the user to be able to easily use the website.
+* The site owner wants the user to be able to be able to read everything on the website.
 
 ### Skeleton ###  
-
+All Wireframes were made using Balsmiq.
 
 #### Design for mobile device: ####  
-
+![phone](assets/wireframes/Phone-Wireframes.png)
   
 #### Design for tablet device: ####
-
+![tablet](assets/wireframes/Tablet-Wireframes.png)
 
 #### Design for desktop device: ####
-
+![desktop](assets/wireframes/Desktop-Wireframes.png)
 
 ### Design ### 
 The Design of this game was originally going to be a fun kids game based on funny looking animals, however during the making of this game, my grandfather passed away and he did enjoy having a drink and drinking games. 
@@ -196,7 +194,7 @@ Background images:
 Memory Game:  
 
 * [Ania Kubow](https://www.youtube.com/watch?v=tjyDOHzKN0w) on youtube.  
-* [Michelle3334](https://github.com/Michelle3334) / freaky_memory on GitHub.
+* [Carhul](https://github.com/Carhul) / ms2-kids-memory-game on GitHub.
     
 ### Acknowledgements ###
 
