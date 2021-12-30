@@ -109,7 +109,8 @@ Features that have been implemented:
 Features that I want to implement in the future:  
 * Increased difficulty
 * Fully Styled Alert button
-* Sound when boxes in Memory Game are pushed  
+* Sound when boxes in Memory Game are pushed.
+* Added Rules
 
 ### Technologies ###  
 Languages  
