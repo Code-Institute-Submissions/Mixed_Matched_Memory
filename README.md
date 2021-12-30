@@ -130,6 +130,9 @@ Coolors was used to make the colorpalett.
 Be Funky was used to resize the images in the Memory Game to avoid stretch.
 
 ### Testing ###  
+ * [The W3C Markup Validation Service](https://validator.w3.org/)  was used to validate my HTML and came back clear.
+ * [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate my css and came back fully clear.
+ * [JS Hint](https://jshint.com/) was used to validate my javascript.
  
 ### Deployment ###  
   Deploying on GitHub pages  
