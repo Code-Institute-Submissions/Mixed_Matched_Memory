@@ -133,7 +133,8 @@ Be Funky was used to resize the images in the Memory Game to avoid stretch.
  * [The W3C Markup Validation Service](https://validator.w3.org/)  was used to validate my HTML and came back clear.
  * [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate my css and came back fully clear.
  * [JS Hint](https://jshint.com/) was used to validate my javascript.
- 
+ * ![Lighthouse](assets/wireframes/Lighthouse_mmm.jpg) 
+
 ### Deployment ###  
   Deploying on GitHub pages  
   
@@ -197,6 +198,9 @@ Background images:
 Memory Game:  
 
 * [Ania Kubow](https://www.youtube.com/watch?v=tjyDOHzKN0w) on youtube.  
+* [Carhul](https://github.com/Carhul) / ms2-kids-memory-game on GitHub.
+
+ReadMe File Layout:
 * [Carhul](https://github.com/Carhul) / ms2-kids-memory-game on GitHub.
     
 ### Acknowledgements ###
