@@ -2,7 +2,7 @@
 
 [View the live site here](https://emmanoelles.github.io/Mixed_Matched_Memory/)
 
-![mockup]()
+![mockup](assets/wireframes/Responive_mmm.jpg)
 
 ## Table of contents ##
 * [Introduction & project goals](#introduction--project-goals)
