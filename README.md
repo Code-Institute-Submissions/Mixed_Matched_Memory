@@ -128,6 +128,10 @@ Unsplash was used for all the images on the web application.
 Coolors was used to make the colorpalett.  
 * [Be Funky](https://www.befunky.com/)  
 Be Funky was used to resize the images in the Memory Game to avoid stretch.
+* [Balsamiq](https://balsamiq.com/wireframes/)
+Balsamiq was used to create wire frames.
+* [Am I Responsive](http://ami.responsivedesign.is/) 
+Am I responsive was used to see how the website looks on different devices.
 
 ### Testing ###  
  * [The W3C Markup Validation Service](https://validator.w3.org/)  was used to validate my HTML and came back clear.
