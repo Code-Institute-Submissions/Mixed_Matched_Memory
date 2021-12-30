@@ -1,6 +1,6 @@
 # Drinking memory-game #
 
-[View the live site here]()
+[View the live site here](https://emmanoelles.github.io/Mixed_Matched_Memory/)
 
 ![mockup]()
 
@@ -61,13 +61,13 @@ This game was made for adults who enjoy having a bit of fun whille they drink.
 All Wireframes were made using Balsmiq.
 
 #### Design for mobile device: ####  
-![phone](assets/wireframes/Phone-Wireframes.png)
+![phone](assets/wireframes/Phone-Wireframe.png)
   
 #### Design for tablet device: ####
-![tablet](assets/wireframes/Tablet-Wireframes.png)
+![tablet](assets/wireframes/Tablet-Wireframe.png)
 
 #### Design for desktop device: ####
-![desktop](assets/wireframes/Desktop-Wireframes.png)
+![desktop](assets/wireframes/Desktop-Wireframe.png)
 
 ### Design ### 
 The Design of this game was originally going to be a fun kids game based on funny looking animals, however during the making of this game, my grandfather passed away and he did enjoy having a drink and drinking games. 
